@@ -33,10 +33,14 @@ hmb.addEventListener("click",()=>{
 })
 cl.addEventListener(".click",()=>{
     nav_Cont.style.visibility = "hidden"
+    console.log("sm")
 })
 
 function animation(){
     gsap.from("nav-cont",{
         opacity:1,duration:0.4
     })
+}
+function myfunc(){
+    console.log("aak")
 }
