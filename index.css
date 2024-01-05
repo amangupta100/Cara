@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "RZ Regular";
+  overflow-x: hidden;
+}
+.wrapper .page1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(./assests/pexels-andrea-piacquadio-3755706.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cursor {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+}
+.page1 .nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 0vw;
+  backdrop-filter: blur(4px);
+  background-color: rgba(227, 230, 243, 0.539);
+  box-shadow: 0px 20px 35px lightgray;
+  z-index: 99;padding: 0 8vw;
+}
+.nav .cart{
+  width: 2.3vw;
+}
+.nav .part3{
+  display: flex;gap: 8px;position: absolute;
+  right: 5%;align-items: center;
+}
+.nav img{
+  width: 10vw;
+}
+.nav .hmb{
+display: none;
+}
+.hmb .line{
+  width: 3.3vw;color: black;
+  height: 1.7px;margin-top: 0.6vw;background-color: black;
+}
+.hmb .line:nth-child(1){
+  width: 2.5vw;color: black;
+  height: 1.7px;margin-top: 0.6vw;background-color: black;
+}
+.hmb .line:nth-child(3){
+  width: 2.5vw;color: black;
+  height: 1.7px;margin-top: 0.6vw;background-color: black;
+}
+.nav .part3 img{
+  width: 2vw;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 1.1vw;
+  font-weight: 300;
+  color: black;
+}
+ .nav-cont{
+  position:fixed;
+  position:absolute;width: 80%;height: 100vh;
+  background-color: rgba(227, 230, 243, 0.865);
+  background-clip: blur(10px);
+  top: 0;right: 0;z-index: 1000;
+  display: flex;flex-direction: column;
+  gap: 1.5vw;padding: 4vw 3vw;visibility: hidden;
+  transition: all ease-in-out 0.6s;
+}
+.page1 .nav-cont a{
+  font-size:2.4vw;color: black;text-decoration: none;
+}
+.page1 .nav-cont a:nth-child(2){
+  margin-top: 7vw;
+}
+.page1 .nav-cont .close{
+  position: absolute;top:3vw;
+  left: 3vw;font-size: 3vw;
+}
+.text-cont {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8vw;gap: 5px;
+}
+.text-cont h1 {
+  color: white;
+  font-weight: 550;
+}
+.text-cont h1:nth-child(4) {
+  color: white;
+  font-size: 1.7vw;
+}
+.text-cont h1:nth-child(1) {
+  font-size: 1.4vw;
+}
+.text-cont h1:nth-child(2) {
+  font-size: 4vw;
+}
+.text-cont h1:nth-child(3) {
+  font-size: 4vw;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  color: lightgray;
+  width: 50%;
+}
+.text-cont a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: white;
+  padding: 1vw 3vw;
+  background: url(./assests/button.png);
+  width: 12vw;
+  margin-top: 30px;
+}
+.nav .part2 {
+  display: flex;
+  gap: 3vw;
+  padding: 0vw 4vw;align-items: center;
+}
+.page2 {
+  width: 100vw;
+  min-height: 100vh;
+}
+.page2 .features {
+  display: grid;grid-template-columns:auto auto auto auto auto auto;
+  width: 100%;
+  min-height: 50vh;
+  gap: 30px;padding: 0 4vw;
+  align-items: center
+}
+.features .f {
+  height: 35vh;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  transition: all ease-in 0.2s;
+  border-radius: 15px;
+}
+.features .f:hover {
+  scale: 1.07;
+  box-shadow: 7px 7px 20px lightgray inset;
+}
+.f h1 {
+  font-size: 1.3vw;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.f-products {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 5vw 3vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.f-products .f-prh1 {
+  font-size: 4vw;
+  font-weight: 800;
+  background: linear-gradient(to bottom, gray, rgb(219, 216, 216));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.f-products p {
+  font-size: 1.25vw;
+  color: gray;
+}
+.f-products .items {
+  display: grid;
+  width: 100%;
+  min-height: 130vh;
+  grid-template-columns: auto auto auto auto;
+  gap: 35px;
+  justify-content: center;
+  position: relative;
+  padding: 4vw 0;
+}
+.items .div {
+  width: 19vw;
+  height: 27vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  position: relative;
+  padding: 0.8vw 1.4vw;
+  position: static;
+  gap: 10px;
+  transition: all ease 0.2s;
+  border: 1px solid lightgray;
+}
+
+.div img {
+  border-radius: 16px;
+  position: static;
+}
+.div .brand {
+  font-size: 1.2vw;
+  color: gray;
+}
+.div:hover {
+  scale: 1.02;
+  border: none;
+  box-shadow: 7px 0px 20px lightgray inset;
+}
+.div .product {
+  font-size: 1.2vw;
+}
+.div .price {
+  font-size: 1.3vw;
+  letter-spacing: 2px;
+}
+.page2 .banner_page2 {
+  width: 100%;
+  height: 38vh;
+  background: url(./assests/banner/b2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.banner_page2 h1 {
+  color: white;
+}
+.banner_page2 h1:nth-child(1) {
+  font-size: 1.2vw;
+}
+.banner_page2 h1:nth-child(2) {
+  font-size: 2.7vw;
+  font-weight: 800;
+}
+.banner_page2 a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+}
+.banner_page2 a:hover {
+  background: linear-gradient(to bottom, grey, lightgrey);
+}
+.page3 {
+  width: 100%;
+  min-height: 100vh;
+}
+.page3 .new-arr {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw 0px;
+  gap: 10px;
+}
+.page3 .arrival {
+  font-size: 4vw;
+  font-weight: 800;
+  background: linear-gradient(to bottom, gray, rgb(219, 216, 216));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.page3 .collection {
+  font-size: 1.25vw;
+  color: gray;
+}
+.page3 .items {
+  display: grid;
+  width: 100%;
+  min-height: 130vh;
+  grid-template-columns: auto auto auto auto;
+  gap: 35px;
+  justify-content: center;
+  position: relative;
+  padding: 4vw 0;
+}
+.page4 {
+  width: 100%;
+  min-height: 100vh;
+}
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner .banner_1 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;gap: 30px;
+  justify-content: space-around;
+}
+.ban-1 {
+  width: 37%;
+  height: 50vh;
+  background: url(./assests/banner/b17.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 2vw;
+  gap: 7px;
+}
+.ban-1 h1:nth-child(1) {
+  font-size: 1.36vw;
+  color: gray;
+  font-weight: 700;
+}
+.ban-1 h1:nth-child(2) {
+  font-size: 1.9vw;
+  letter-spacing: 1px;
+}
+.ban-1 h1:nth-child(3) {
+  font-size: 1.3vw;
+}
+.ban-1 a {
+  padding: 1vw;
+  color: white;
+  border: 2px solid white;
+  width: 8.8vw;
+  text-decoration: none;
+  margin-top: 1vw;font-size: 1.2vw;
+}
+.ban-2 {
+  width: 37%;
+  height: 50vh;
+  background: url(./assests/banner/b10.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 2vw;
+  gap: 7px;
+}
+.ban-2 h1:nth-child(1) {
+  font-size: 1.36vw;
+  color: white;
+  font-weight: 700;
+}
+.ban-2 h1:nth-child(2) {
+  font-size: 1.9vw;
+  letter-spacing: 2px;
+}
+.ban-2 h1:nth-child(3) {
+  font-size: 1.3vw;
+}
+.ban-2 a {
+  padding: 1vw 1.3vw;
+  color: white;
+  width: 8vw;
+  text-decoration: none;
+  margin-top: 1vw;
+  transition: all ease-in-out 0.3s;
+  border: 2px solid white;
+  font-size: 1.2vw;
+}
+.ban-2 a:hover {
+  background-color: rgb(45, 154, 45);
+}
+.banner .banner_2 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  gap: 45px;padding: 0 6vw;justify-content: space-between;
+}
+.banner_2 .ban-1 {
+  width: 30%;
+  height: 48vh;
+  background: url(./assests/banner/b7.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 2vw;
+  gap: 7px;
+}
+.banner_2 .ban-1 h1:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 1.9vw;
+  color: white;
+}
+.banner_2 .ban-1 h1:nth-child(2) {
+  font-size: 1vw;
+  color: white;
+}
+.banner_2 .ban-2 {
+  width: 30%;
+  height: 48vh;
+  background: url(./assests/banner/b4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 2vw;
+  gap: 7px;
+}
+.banner_2 .ban-2 h1:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 1.9vw;
+  color: white;
+}
+.banner_2 .ban-2 h1:nth-child(2) {
+  font-size: 1vw;
+  color: white;
+}
+.banner_2 .ban-3 {
+  width: 30%;
+  height: 48vh;
+  background: url(./assests/banner/b18.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0 2vw;
+  gap: 7px;
+}
+.banner_2 .ban-3 h1:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 1.9vw;
+  color: white;
+}
+.banner_2 .ban-3 h1:nth-child(2) {
+  font-size: 1vw;
+  color: white;
+}
+.page4 .newsletter {
+  width: 100%;
+  height: 25vh;
+  background: linear-gradient(
+    to bottom right,
+    rgb(204, 204, 219),
+    rgb(87, 87, 215)
+  );
+  margin-top: 4vw;
+  display: flex;
+  padding: 0vw 5vw;
+  justify-content: center;
+  flex-direction: column;
+}
+.page4 .newsletter .sign_up {
+  font-size: 1.7vw;
+  color: white;
+}
+.newsletter .updates {
+  display: flex;
+  gap: 16vw;
+  align-items: center;
+  position: relative;
+}
+.newsletter .update {
+  font-size: 1.2vw;
+}
+.updates input {
+  border: none;
+  padding: 1vw;
+  width: 23vw;
+  color: gray;
+  font-size: 1.1vw;
+}
+.page4 .updates h1 {
+  font-size: 1.2vw;
+  color: white;
+}
+input:focus {
+  outline: none !important;
+}
+.updates a {
+  background-color: aqua;
+  position: absolute;
+  right: 13.2vw;
+  font-size: 1vw;
+  padding: 1.02vw;
+  cursor: pointer;
+}
+*::selection {
+  color: white;
+  background-color: gray;
+}
+.page4 .footer {
+  width: 100%;
+  min-height: 48vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 7vw 5vw;
+  gap: 35px;
+}
+.footer .cont {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cont .styl1 {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+  letter-spacing: 1.5px;
+}
+.cont .styl2 {
+  font-size: 1vw;
+  color: gray;
+  text-decoration: none;
+  margin-top: 0.5vw;
+  cursor: pointer;
+}
+#div1 h1:nth-child(6) {
+  color: black;
+  margin-top: 1vw;
+}
+.media_cont {
+  display: flex;
+  gap: 15px;
+}
+.media_cont .media {
+  width: 1.8vw;
+}
+.cont img {
+  width: 10vw;
+}
+#div4 .download {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+  gap: 15px;
+}
+.download button{
+  cursor: pointer;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+#div4 .payment img {
+  width: 16vw;
+  margin-top: 1vw;
+}
+.designed-cont {
+  width: 100%;
+  overflow: hidden;
+  height: 38px;
+}
+.designed-cont:hover h1 {
+  transform: translateY(-100%);
+  color: gray;
+}
+.designed {
+  transition: all ease-in 0.3s;
+  font-size: 2vw;
+  color: black;
+  font-weight: 300;
+}
+.s_page1{
+  width: 100%;min-height: 100vh;
+position: relative;
+}
+.s_page1 .nav{
+  width: 100vw;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 5vw;
+  backdrop-filter: blur(4px);
+  background-color: rgba(227, 230, 243, 0.539);
+  box-shadow: 0px 20px 35px lightgray;
+  z-index: 102;
+}
+.s_page1 .ban{
+  width: 100%;height: 41vh;
+  background-color: chartreuse;
+  margin-top: 5vw;
+  background-image: url(./assests/banner/b1.jpg);
+  background-size: cover;background-repeat: no-repeat;
+  background-position: center;
+  display: flex;align-items: center;
+  justify-content: center;
+  flex-direction: column;gap: 5px;
+}
+.s_page1 .ban h1:nth-child(1){
+color: white;font-size: 2vw;
+}
+.s_page1 .ban h1:nth-child(2){
+  color: rgba(255, 255, 255, 0.626);font-size: 1.3vw;
+  }
+.s_page1 .items{
+  width: 100%;min-height: 140vh;
+  display: grid;grid-template-columns: auto auto auto auto;
+  padding: 5vw 6vw;
+}
+

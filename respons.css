@@ -1,0 +1,263 @@
+@media screen and (max-width: 769px) {
+  .cursor {
+    display: none;
+  }
+  .nav .part2 {
+    display: none;
+  }
+  .nav .part3 .hmb {
+    display: block;
+  }
+  .hmb .line {
+    width: 3vw;
+    color: black;
+    height: 1.9px;
+    margin-top: 0.6vw;
+    background-color: black;
+  }
+  .nav .part3 img {
+    width: 4vw;
+  }
+  .nav img {
+    width: 13vw;
+  }
+  .page1 .text-cont h1:nth-child(2) {
+    font-size: 3vw;
+    letter-spacing: 1px;
+  }
+  .page1 .text-cont h1:nth-child(1) {
+    font-size: 2.5vw;
+  }
+  .text-cont h1:nth-child(4) {
+    font-size: 2.5vw;
+  }
+  .text-cont a {
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+    width: 18vw;
+    margin-top: 20px;
+  }
+  .page2 .features {
+    grid-template-columns: auto auto auto;
+    padding: 8vw 8vw;
+  }
+  .features .f h1 {
+    font-size: 1.7vw;
+  }
+  .f-products .items {
+    grid-template-columns: auto auto;
+    gap: 35px;
+    justify-content: center;
+    position: relative;
+    padding: 8vw 0;
+  }
+  .items .div {
+    width: 27vw;
+    height: 42vw;gap: 4px;
+  }
+  .items .div .price{
+    letter-spacing: 0px;
+  }
+  .div .product {
+    font-size: 2vw;
+  }
+  .div .brand {
+    font-size: 2.3vw;
+  }
+  .div .price {
+    font-size: 1.8vw;
+    letter-spacing: 2px;
+  }
+  .page2 .banner_page2 h1:nth-child(1) {
+    font-size: 2.5vw;
+  }
+  .page3 .collection {
+    font-size: 2vw;
+  }
+  .page3 .items {
+    grid-template-columns: auto auto;
+  }
+  .page4 .banner_1 .ban-1 h1:nth-child(1) {
+    font-size: 2vw;
+  }
+  .page4 .banner_1 .ban-1 {
+    width: 50%;
+  }
+  .page4 #div4 .designed-cont h1:nth-child(2){
+    display: none;
+  }
+  .banner_1 .ban-2 {
+    width: 50%;
+  }
+  .banner_1 {
+    padding: 0 6vw;
+  }
+  .ban-1 h1:nth-child(3) {
+    font-size: 2vw;
+  }
+  .ban-1 a {
+    width: 13vw;
+    font-size: 1.8vw;
+  }
+  .ban-2 a {
+    width: 14vw;
+    font-size: 1.5vw;
+    padding: 1vw 3vw;
+  }
+  .ban-2 h1:nth-child(3) {
+    font-size: 2vw;
+  }
+  .ban-2 h1:nth-child(1) {
+    font-size: 2vw;
+  }
+  .page4 .banner_2 {
+    gap: 30px;
+  }
+  .page4 .banner_2 .ban-1 {
+    width: 35%;
+  }
+  .banner_2 .ban-1 h1:nth-child(2) {
+    font-size: 1.8vw;
+  }
+  .banner_2 .ban-2 h1:nth-child(2) {
+    font-size: 1.8vw;
+  }
+  .banner_2 .ban-3 h1:nth-child(2) {
+    font-size: 1.8vw;
+  }
+  .banner_2 .ban-2 {
+    width: 35%;
+  }
+  .banner_2 .ban-3 {
+    width: 35%;
+  }
+  .page4 .newsletter h1 {
+    font-size: 2vw;
+  }
+  .newsletter .updates input {
+    font-size: 1.5vw;
+    width: 27vw;
+  }
+  .newsletter .updates {
+    gap: 9vw;
+  }
+  .newsletter .updates a {
+    right: 0%;
+    padding: 1.1vw;
+    font-size: 1.4vw;
+  }
+  .footer .styl1 {
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+  }
+  .footer .styl2 {
+    font-size: 1.6vw;
+    letter-spacing: 1px;
+  }
+  .footer #div1 img {
+    width: 16vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .page1 .nav {
+    height: 8vh;
+  }
+  .page1 .line {
+    width: 3.5vw;
+    height: 1.5px;
+  }
+  .hmb .line:nth-child(1) {
+    width: 2.5vw;
+    color: black;
+    height: 1.4px;
+    margin-top: 0.6vw;
+    background-color: black;
+  }
+  .hmb .line:nth-child(3) {
+    width: 2.5vw;
+    color: black;
+    height: 1.4px;
+    margin-top: 0.6vw;
+    background-color: black;
+  }
+  .page1 .nav img{
+  width: 20vw;
+  }
+  .page2 .features .f h1{
+    font-size: 2.8vw;
+  }
+  .nav .part3 img{
+    width: 5vw;
+  }
+ .page1 .text-cont h1:nth-child(1){
+    font-size: 4vw;
+  }
+  .text-cont h1:nth-child(4){
+    font-size: 3vw;
+  }
+  .page2 .features{
+    grid-template-columns: auto auto;
+    padding: 13vw;
+  }
+  .f-products .items {
+    grid-template-columns: auto auto;
+    gap: 35px;
+    justify-content: center;
+    position: relative;
+    padding: 8vw 0;
+  }
+  .f-products p{
+    font-size: 3vw;
+  }
+  .items .div{
+width: 35vw;height: 57vw;
+  }
+  .div .product {
+    font-size: 3vw;
+  }
+  .div .brand {
+    font-size: 2.9vw;
+  }
+  .div .price {
+    font-size: 2.5vw;
+    letter-spacing: 0px;
+  }
+ .page2 .banner_page2 h1:nth-child(1){
+    font-size: 4vw;
+  }
+  .page2 .banner_page2 h1:nth-child(2){
+    font-size: 4vw;
+  }
+  .page3 .new-arr p{
+    font-size: 3vw;
+  }
+  .page4 .newsletter .sign_up{
+    font-size: 3vw;
+  }
+  .page4 .newsletter{
+    gap: 10px;
+  }
+  .newsletter .updates input {
+    font-size: 2.5vw;
+    width: 60vw;padding: 2vw 1vw;
+  }
+  .newsletter .updates {
+    gap: 3vw;
+  }
+  .newsletter .updates h1{
+    font-size: 3.2vw;
+  }
+  .newsletter .updates a {
+    right: 0%;
+    padding: 2vw;
+    font-size: 2.5vw;
+  }
+  .footer .styl1 {
+    font-size: 2vw;
+    letter-spacing: 1px;
+  }
+  .footer .styl2 {
+    font-size: 2vw;
+    letter-spacing: 0px;
+  }
+}
