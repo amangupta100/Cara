@@ -2,13 +2,15 @@ function cursor(){
     let cursor = document.querySelector(".cursor")
 let cont = document.querySelector(".wrapper")
 let all_head = document.querySelector(".prod")
+let prod = document.querySelectorAll(".div")
+
 
 cont.addEventListener("mousemove",(dets)=>{
 gsap.to(cursor,{
     left:dets.x,top:dets.y
 })
 })
-all_head.addEventListener("mousemove",(dets)=>{
+all_head.addEventListener("mouseenter",(dets)=>{
     gsap.to(cursor,{
         left:dets.x-90,top:dets.y-90
     })
@@ -21,6 +23,23 @@ all_head.addEventListener("mouseleave",()=>{
     cursor.style.height = "25px"
     cursor.innerHTML = ""
 })
+prod.forEach((item)=>{
+item.addEventListener("mouseenter",(dets)=>{
+    gsap.to(cursor,{
+        left:dets.x-90,top:dets.y-90
+    })
+    console.log("am")
+    cursor.style.width = "100px"
+    cursor.style.height = "100px"
+    cursor.style.backgroundColor = "lightpink"  
+})
+item.addEventListener("mouseleave",()=>{
+    cursor.style.width = "25px"
+    cursor.style.height = "25px"
+    cursor.style.backgroundColor = "grey"  
+})
+})
+
 }
 cursor()
 
@@ -33,7 +52,6 @@ hmb.addEventListener("click",()=>{
 })
 cl.addEventListener(".click",()=>{
     nav_Cont.style.visibility = "hidden"
-    console.log("sm")
 })
 
 function animation(){
@@ -41,6 +59,4 @@ function animation(){
         opacity:1,duration:0.4
     })
 }
-function myfunc(){
-    console.log("aak")
-}
+animation()

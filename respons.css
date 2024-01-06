@@ -42,7 +42,7 @@
     padding: 8vw 8vw;
   }
   .features .f h1 {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
   .f-products .items {
     grid-template-columns: auto auto;
@@ -53,9 +53,10 @@
   }
   .items .div {
     width: 27vw;
-    height: 42vw;gap: 4px;
+    height: 42vw;
+    gap: 4px;
   }
-  .items .div .price{
+  .items .div .price {
     letter-spacing: 0px;
   }
   .div .product {
@@ -83,7 +84,7 @@
   .page4 .banner_1 .ban-1 {
     width: 50%;
   }
-  .page4 #div4 .designed-cont h1:nth-child(2){
+  .page4 #div4 .designed-cont h1:nth-child(2) {
     display: none;
   }
   .banner_1 .ban-2 {
@@ -163,88 +164,90 @@
     height: 8vh;
   }
   .page1 .line {
-    width: 3.5vw;
-    height: 1.5px;
+    width: 4vw;
+    height: 1.4px;
   }
   .hmb .line:nth-child(1) {
-    width: 2.5vw;
+    width: 3vw;
     color: black;
     height: 1.4px;
-    margin-top: 0.6vw;
+    margin-top: 0.8vw;
     background-color: black;
   }
   .hmb .line:nth-child(3) {
-    width: 2.5vw;
+    width: 3vw;
     color: black;
     height: 1.4px;
-    margin-top: 0.6vw;
+    margin-top: 0.8vw;
     background-color: black;
   }
-  .page1 .nav img{
-  width: 20vw;
+  .page1 .nav img {
+    width: 20vw;
   }
-  .page2 .features .f h1{
+  .page2 .features .f h1 {
     font-size: 2.8vw;
   }
-  .nav .part3 img{
+  .nav .part3 img {
     width: 5vw;
   }
- .page1 .text-cont h1:nth-child(1){
+  .page1 .text-cont h1:nth-child(1) {
     font-size: 4vw;
   }
-  .text-cont h1:nth-child(4){
+  .text-cont h1:nth-child(4) {
     font-size: 3vw;
   }
-  .page2 .features{
+  .page2 .features {
     grid-template-columns: auto auto;
     padding: 13vw;
   }
   .f-products .items {
     grid-template-columns: auto auto;
-    gap: 35px;
+    gap: 25px;
     justify-content: center;
     position: relative;
     padding: 8vw 0;
   }
-  .f-products p{
+  .f-products p {
     font-size: 3vw;
   }
-  .items .div{
-width: 35vw;height: 57vw;
+  .items .div {
+    width: 40vw;
+    height: 65vw;
   }
   .div .product {
-    font-size: 3vw;
+    font-size: 3.7vw;
   }
   .div .brand {
-    font-size: 2.9vw;
+    font-size: 3.4vw;
   }
   .div .price {
-    font-size: 2.5vw;
+    font-size: 3vw;
     letter-spacing: 0px;
   }
- .page2 .banner_page2 h1:nth-child(1){
+  .page2 .banner_page2 h1:nth-child(1) {
     font-size: 4vw;
   }
-  .page2 .banner_page2 h1:nth-child(2){
+  .page2 .banner_page2 h1:nth-child(2) {
     font-size: 4vw;
   }
-  .page3 .new-arr p{
+  .page3 .new-arr p {
     font-size: 3vw;
   }
-  .page4 .newsletter .sign_up{
+  .page4 .newsletter .sign_up {
     font-size: 3vw;
   }
-  .page4 .newsletter{
+  .page4 .newsletter {
     gap: 10px;
   }
   .newsletter .updates input {
     font-size: 2.5vw;
-    width: 60vw;padding: 2vw 1vw;
+    width: 60vw;
+    padding: 2vw 1vw;
   }
   .newsletter .updates {
     gap: 3vw;
   }
-  .newsletter .updates h1{
+  .newsletter .updates h1 {
     font-size: 3.2vw;
   }
   .newsletter .updates a {
@@ -259,5 +262,42 @@ width: 35vw;height: 57vw;
   .footer .styl2 {
     font-size: 2vw;
     letter-spacing: 0px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .page2 .f-products .items {
+    grid-template-columns: auto;
+  }
+  .page2 .f-products .f-prh1 {
+    font-size: 8vw;
+  }
+  .page2 .f-products p {
+    font-size: 4vw;
+  }
+  .items .div {
+    width: 60vw;
+    height: 92vw;
+  }
+  .div .brand {
+    font-size: 4vw;
+  }
+  .div .product {
+    font-size: 5vw;
+  }
+  .div .price {
+    font-size: 4vw;
+  }
+  .page3 .new-arr .arrival {
+    font-size: 8vw;
+  }
+  .page3 .new-arr p {
+    font-size: 4vw;
+  }
+  .page3 .items {
+    grid-template-columns: auto;
+  }
+  .items .div {
+    width: 60vw;
+    height: 92vw;
   }
 }
