@@ -28,7 +28,6 @@ item.addEventListener("mouseenter",(dets)=>{
     gsap.to(cursor,{
         left:dets.x-90,top:dets.y-90
     })
-    console.log("am")
     cursor.style.width = "100px"
     cursor.style.height = "100px"
     cursor.style.backgroundColor = "lightpink"  

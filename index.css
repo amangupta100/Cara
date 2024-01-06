@@ -245,6 +245,10 @@
   border-radius: 16px;
   position: static;
 }
+.div .cart{
+  position: absolute;
+  width: 2vw;bottom: 5%;right: 7%;
+}
 .div .brand {
   font-size: 1.2vw;
   color: gray;
