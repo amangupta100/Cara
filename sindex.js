@@ -1,7 +1,23 @@
+let nav_Cont = document.querySelector(".nav-cont")
+let hmb = document.querySelector('.nav .part3 .hmb')
+let cl = document.querySelector(".nav-cont .close")
+
+hmb.addEventListener("click",()=>{
+    nav_Cont.style.visibility = "visible"
+    console.log("dm")
+})
+cl.addEventListener(".click",()=>{
+    nav_Cont.style.visibility = "hidden"
+})
+
+function myfunction(){
+    window.open("sproduct.html")
+}
+myfunction()
+
 function cursor(){
     let cursor = document.querySelector(".cursor")
 let cont = document.querySelector(".wrapper")
-let all_head = document.querySelector(".prod")
 let prod = document.querySelectorAll(".div")
 let s_page = document.querySelectorAll(".s_page1 .items .div")
 
@@ -9,19 +25,6 @@ cont.addEventListener("mousemove",(dets)=>{
 gsap.to(cursor,{
     left:dets.x,top:dets.y
 })
-})
-all_head.addEventListener("mouseenter",(dets)=>{
-    gsap.to(cursor,{
-        left:dets.x-90,top:dets.y-90
-    })
-    cursor.style.width = "80px"
-    cursor.style.height = "80px"
-    cursor.innerHTML = "Products"
-})
-all_head.addEventListener("mouseleave",()=>{
-    cursor.style.width = "25px"
-    cursor.style.height = "25px"
-    cursor.innerHTML = ""
 })
 prod.forEach((item)=>{
 item.addEventListener("mouseenter",(dets)=>{
@@ -40,16 +43,3 @@ item.addEventListener("mouseleave",()=>{
 })
 }
 cursor()
-
-let nav_Cont = document.querySelector(".nav-cont")
-let hmb = document.querySelector('.nav .part3 .hmb')
-let cl = document.querySelector(".nav-cont .close")
-
-hmb.addEventListener("click",()=>{
-    nav_Cont.style.visibility = "visible"
-})
-cl.addEventListener(".click",()=>{
-    nav_Cont.style.visibility = "hidden"
-})
-
-

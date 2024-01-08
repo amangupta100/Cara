@@ -1,4 +1,14 @@
 @media screen and (max-width: 769px) {
+  .nav-cont a {
+    font-size: 3vw;
+  }
+  .nav-cont {
+    height: 70vh;
+  }
+  .nav {
+    justify-content: space-between;
+    padding: 0 11vw;
+  }
   .cursor {
     display: none;
   }
@@ -51,29 +61,38 @@
     position: relative;
     padding: 8vw 0;
   }
+  .f-products .f-prh1 {
+    font-size: 7vw;
+  }
+  .f-products p {
+    font-size: 2.6vw;
+  }
   .items .div {
-    width: 27vw;
-    height: 42vw;
+    width: 35vw;
+    height: 51vw;
     gap: 4px;
   }
   .items .div .price {
     letter-spacing: 0px;
   }
   .div .product {
-    font-size: 2vw;
+    font-size: 2.8vw;
   }
   .div .brand {
-    font-size: 2.3vw;
+    font-size: 2.5vw;
   }
   .div .price {
-    font-size: 1.8vw;
+    font-size: 2vw;
     letter-spacing: 2px;
   }
   .page2 .banner_page2 h1:nth-child(1) {
     font-size: 2.5vw;
   }
+  .page3 .arrival {
+    font-size: 7vw;
+  }
   .page3 .collection {
-    font-size: 2vw;
+    font-size: 2.6vw;
   }
   .page3 .items {
     grid-template-columns: auto auto;
@@ -147,6 +166,38 @@
     padding: 1.1vw;
     font-size: 1.4vw;
   }
+  .page4 .footer {
+    grid-template-columns: auto auto;
+  }
+  .page4 .footer .cont {
+    height: 55vh;
+  }
+  .page4 .footer a {
+    font-size: 2.7vw;
+  }
+  .page4 .footer #div1 .media_cont img {
+    width: 4vw;
+  }
+  .page4 .footer #div4 .payment img {
+    width: 30vw;
+  }
+  .page4 .footer .styl1 {
+    width: 55%;
+    font-size: 2.7vw;
+  }
+  .page4 .footer .styl2 {
+    width: 55%;
+    font-size: 2.3vw;
+  }
+  .page4 .footer .designed-cont h1:nth-child(2) {
+    display: none;
+  }
+  .page4 .footer .designed-cont h1:nth-child(1) {
+    font-size: 3vw;
+  }
+  .page4 .footer #div4 .payment {
+    width: 26vw;
+  }
   .footer .styl1 {
     font-size: 1.7vw;
     letter-spacing: 1px;
@@ -158,8 +209,80 @@
   .footer #div1 img {
     width: 16vw;
   }
+  .s_page1 .ban {
+    margin-top: 8vw;
+  }
+  .s_page1 .items {
+    padding: 7vw 0;
+    gap: 6vw;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+  .s_page1 .ban h1:nth-child(1) {
+    font-size: 4vw;
+  }
+  .s_page1 .ban h1:nth-child(2) {
+    font-size: 2.6vw;
+  }
+  .s_page1 .items .div {
+    width: 35vw;
+    height: 53vw;
+  }
+  .s_page2 .newsletter .sign_up {
+    font-size: 2.7vw;
+  }
+  .s_page2 .newsletter .update {
+    font-size: 3.4vw;
+  }
+  .s_page2 .newsletter .updates {
+    gap: 4vw;
+  }
+  .s_page2 .newsletter input {
+    width: 55%;
+    font-size: 2vw;
+  }
+  .s_page2 .newsletter a {
+    font-size: 2vw;
+  }
+  .s_page2 .footer {
+    gap: 30px;
+    justify-content: center;
+    padding: 8vw 0;
+    align-items: center;
+    grid-template-columns: auto auto;
+  }
+  .s_page2 .footer #div1 .media_cont img {
+    width: 4vw;
+  }
+  .s_page2 .footer .cont {
+    height: 51vh;
+  }
+  .s_page2 .footer a {
+    font-size: 2.7vw;
+  }
+  .s_page2 .footer .styl1 {
+    width: 55%;
+    font-size: 2.7vw;
+  }
+  .s_page2 .footer .styl2 {
+    width: 55%;
+    font-size: 2.3vw;
+  }
+  .s_page2 .footer .designed-cont h1:nth-child(2) {
+    display: none;
+  }
+  .s_page2 .footer .designed-cont h1:nth-child(1) {
+    font-size: 3vw;
+  }
+  .s_page2 .footer #div4 .payment {
+    width: 26vw;
+  }
 }
 @media screen and (max-width: 426px) {
+  .nav-cont{
+    margin: 3vw 1vw;
+  }
   .page1 .nav {
     height: 8vh;
   }
@@ -262,6 +385,13 @@
   .footer .styl2 {
     font-size: 2vw;
     letter-spacing: 0px;
+  }
+  .s_page1 .items{
+    grid-template-columns: auto;
+    padding: 15vw 0;
+  }
+  .s_page1 .items .div{
+    width: 50vw;height:73vw;
   }
 }
 @media screen and (max-width: 376px) {

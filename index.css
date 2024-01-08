@@ -20,26 +20,23 @@
   border-radius: 50%;
   background-color: gray;
   position: fixed;
-  mix-blend-mode: difference;
   z-index: 999;
-  display: flex;
+  display: flex;mix-blend-mode:difference;
   align-items: center;
   justify-content: center;
-  font-size: 1.2vw;
+  font-size: 1.2vw;background-color: rgba(255, 192, 203, 0.475);
 }
-.page1 .nav {
+.nav {
   width: 100vw;
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
-  padding: 0 0vw;
   backdrop-filter: blur(4px);
   background-color: rgba(227, 230, 243, 0.539);
-  box-shadow: 0px 20px 35px lightgray;
+  box-shadow: 0px 15px 20px lightgray;
   z-index: 99;
-  padding: 0 8vw;
 }
 .nav .cart {
   width: 2.3vw;
@@ -88,12 +85,12 @@
   color: black;
 }
 .nav-cont {
-  margin: 1vw;
+  margin: 2vw 1vw;
   border-radius: 20px;
   position: fixed;
   width: 100%;
   height: 50vh;
-  background-color: rgba(227, 230, 243, 0.865);
+  background-color: rgb(227, 230, 243);
   background-clip: blur(10px);
   top: 8.5%;
   right: 0;
@@ -245,9 +242,11 @@
   border-radius: 16px;
   position: static;
 }
-.div .cart{
+.div .cart {
   position: absolute;
-  width: 2vw;bottom: 5%;right: 7%;
+  width: 2vw;
+  bottom: 5%;
+  right: 7%;
 }
 .div .brand {
   font-size: 1.2vw;
@@ -256,7 +255,8 @@
 .div:hover {
   scale: 1.02;
   border: none;
-  box-shadow: 7px 0px 20px lightgray inset;
+  box-shadow:  20px 20px 60px #5a5a5a,
+             -20px -20px 60px #ffffff;
 }
 .div .product {
   font-size: 1.2vw;
@@ -644,7 +644,7 @@ input:focus {
 .s_page1 .ban {
   width: 100%;
   height: 41vh;
-  margin-top:5vw;
+  margin-top: 5vw;
   background-image: url(./assests/banner/b1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -666,7 +666,107 @@ input:focus {
 .s_page1 .items {
   width: 100%;
   min-height: 140vh;
-  display: grid;
+  display: grid;gap:3vw;
   grid-template-columns: auto auto auto auto;
-  padding: 5vw 6vw;
+  justify-content: center;padding: 6vw 0;
+}
+.s_page1 .pagination{
+  display: flex;
+  width: 10vw;height: 7vh;
+  gap: 10px;transform: translateX(40vw);
+  margin-top: 2vw;
+}
+.pagination .page{
+  width: 30%;height: 7vh;background-color:seagreen;
+  border-radius: 6px;display: flex;align-items: center;
+  justify-content: center;font-size: 1.5vw;
+  color: white;cursor: pointer;
+}
+.s_page2{
+  width: 100%;min-height: 110vh;
+}
+.s_page2 .newsletter{
+  display: flex;padding: 0 5vw;
+  flex-direction: column;justify-content: center;
+  width: 100%;height: 30vh;
+  background: linear-gradient(
+    to bottom right,
+    rgb(204, 204, 219),
+    rgb(87, 87, 215)
+  );
+}
+
+.s_page2 .newsletter h1{
+  color: white;
+}
+.s_page2 .footer{
+  padding:  5vw 0;
+  align-items: center;justify-content: space-around;
+  display: grid;grid-template-columns: auto auto auto auto;
+}
+.p_det{
+  width: 100%;min-height: 100vh;
+}
+.nav{
+  width: 100%;
+  height: 10vh;
+  display: flex;align-items: center;
+  justify-content: space-around;
+ 
+}
+.p_det .cont{
+  width: 100%;height: 87vh;
+ display: flex;gap: 30px;
+  margin-top: 6vw;padding: 4vw 5vw;
+}
+.p_det .cont .img_cont{
+  display: flex;flex-direction: column;gap: 10px;
+  width: 35%;height:77vh;
+}
+.img_cont img{
+  width: 100%;
+  height: 57vh;background-size: cover;background-position: center;
+}
+.img_cont .more_img{
+  display: flex;gap: 10px;
+}
+.img_cont .more_img img{
+  width: 36%;height: 15vh;
+}
+.p_det .cont .details{
+  padding: 2vw;display: flex;flex-direction: column;
+  gap: 17px;
+  width: 60%;height: 75vh;
+}
+.details h1:nth-child(1){
+  font-size: 1.3vw;
+}
+.details h1:nth-child(2){
+  font-size:2vw;
+}
+.details h1:nth-child(3){
+  font-size:1.5vw;
+}
+.details select{
+  color:gray;width: 25%;
+  padding:0.7vw;font-size: 1.1vw;border: 1px solid gray;
+}
+.details select:focus{
+outline: none !important;
+}
+.details .size{
+  display: flex;gap: 10px;
+}
+.size a{
+  color: white;
+  text-decoration: none;font-size: 1.1vw;
+  padding: 0.8vw 1.5vw;background-color: seagreen;
+}
+.size .quant{
+  width: 3vw;color: white;
+  height: 3vw;background-color: gray;display: flex;align-items: center;
+  justify-content: center;
+}
+.details p{
+  font-size: 1.2vw;
 }
