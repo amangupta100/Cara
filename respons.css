@@ -278,9 +278,33 @@
   .s_page2 .footer #div4 .payment {
     width: 26vw;
   }
+ .s_page1 .cont{
+  padding: 10vw 6vw;
+ }
+ .s_page1 .cont .img_cont{
+  width: 65%;
+ }
+ .s_page1 .details h1:nth-child(1){
+  font-size: 2.8vw;
+ }
+ .s_page1 .details h1:nth-child(2){
+  font-size: 3.4vw;
+ }
+ .s_page1 .details h1:nth-child(3){
+  font-size: 2.5vw;
+ }
+ .s_page1 .details select{
+  font-size: 2vw;
+ }
+ .s_page1 .details p{
+  font-size: 2vw;
+ }
+ .s_page1 .details .size a{
+  font-size: 2vw;
+ }
 }
 @media screen and (max-width: 426px) {
-  .nav-cont{
+  .nav-cont {
     margin: 3vw 1vw;
   }
   .page1 .nav {
@@ -324,27 +348,26 @@
     padding: 13vw;
   }
   .f-products .items {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 25px;
     justify-content: center;
     position: relative;
-    padding: 8vw 0;
   }
   .f-products p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .items .div {
-    width: 40vw;
-    height: 65vw;
+    width: 50vw;
+    height: 71vw;
   }
   .div .product {
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
   .div .brand {
-    font-size: 3.4vw;
+    font-size: 3.6vw;
   }
   .div .price {
-    font-size: 3vw;
+    font-size: 3.4vw;
     letter-spacing: 0px;
   }
   .page2 .banner_page2 h1:nth-child(1) {
@@ -354,8 +377,12 @@
     font-size: 4vw;
   }
   .page3 .new-arr p {
-    font-size: 3vw;
+    font-size: 3.6vw;
   }
+  .page3 .items {
+    grid-template-columns: auto;
+  }
+
   .page4 .newsletter .sign_up {
     font-size: 3vw;
   }
@@ -379,20 +406,87 @@
     font-size: 2.5vw;
   }
   .footer .styl1 {
-    font-size: 2vw;
+    font-size: 3vw;
     letter-spacing: 1px;
   }
+  .page4 .footer .cont {
+    height: 35vh;
+  }
   .footer .styl2 {
-    font-size: 2vw;
+    font-size: 3vw;
     letter-spacing: 0px;
   }
-  .s_page1 .items{
+  .s_page1 .items {
     grid-template-columns: auto;
     padding: 15vw 0;
   }
-  .s_page1 .items .div{
-    width: 50vw;height:73vw;
+  .s_page1 .items .div {
+    width: 50vw;
+    height: 77vw;
   }
+  .s_page1 .pagination {
+    transform: translateX(15vw);
+    width: 25vw;
+    margin-top: 6vw;
+  }
+  .pagination .page {
+    width: 100%;
+    height: 6vh;
+    background-color: seagreen;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    color: white;
+    cursor: pointer;
+  }
+  .s_page2 .footer #div4 .download img {
+    gap: 10px;
+  }
+  .s_page2 .footer #div4 .download img {
+    width: 20vw;
+  }
+  .s_page2 .footer #div4 .payment img {
+    width: 35vw;
+  }
+  .s_page1 .cont{
+    padding: 10vw 6vw;
+   }
+   .s_page1 .cont .img_cont{
+    width: 70%;
+    height: 60vh;
+   }
+.s_page1 .cont{
+  flex-direction: column;
+  padding: 0 4vw;gap: 15px;
+ margin-top:24vw;align-items: center;
+}
+.s_page1 .cont .img_cont{
+  width: 100%;height: 75vh;
+}
+.s_page1 .cont .details{
+  width: 100%;
+}
+.s_page1 .cont .details h1:nth-child(1){
+  font-size: 4vw;
+}
+.s_page1 .cont .details h1:nth-child(2){
+  font-size: 5.5vw;
+}
+.s_page1 .cont .details h1:nth-child(3){
+  font-size: 3.8vw;
+}
+.s_page1 .cont .details select{
+  font-size: 3vw;width: 30%;
+}
+.s_page1 .cont .details .size a{
+  font-size: 4vw;
+  padding: 1.8vw;
+}
+.s_page1 .cont .details p{
+  font-size: 4vw;
+}
 }
 @media screen and (max-width: 376px) {
   .page2 .f-products .items {

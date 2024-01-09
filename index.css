@@ -593,17 +593,11 @@ input:focus {
 }
 #div4 .download {
   display: flex;
-  align-items: center;
-  margin-top: 1vw;
-  gap: 15px;
+ flex-direction: column;
 }
-.download button {
-  cursor: pointer;
-  background-size: cover;
-  border: 1px solid black;
-  border-radius: 8px;
+#div4 .download img{
+width: 9vw;
 }
-
 #div4 .payment img {
   width: 16vw;
   margin-top: 1vw;
@@ -704,22 +698,12 @@ input:focus {
   align-items: center;justify-content: space-around;
   display: grid;grid-template-columns: auto auto auto auto;
 }
-.p_det{
-  width: 100%;min-height: 100vh;
-}
-.nav{
-  width: 100%;
-  height: 10vh;
-  display: flex;align-items: center;
-  justify-content: space-around;
- 
-}
-.p_det .cont{
-  width: 100%;height: 87vh;
+.s_page1 .cont{
+  width: 100%;min-height:120vh;
  display: flex;gap: 30px;
   margin-top: 6vw;padding: 4vw 5vw;
 }
-.p_det .cont .img_cont{
+.s_page1 .cont .img_cont{
   display: flex;flex-direction: column;gap: 10px;
   width: 35%;height:77vh;
 }
@@ -733,10 +717,10 @@ input:focus {
 .img_cont .more_img img{
   width: 36%;height: 15vh;
 }
-.p_det .cont .details{
+.s_page1 .cont .details{
   padding: 2vw;display: flex;flex-direction: column;
   gap: 17px;
-  width: 60%;height: 75vh;
+  width: 60%;height: 80vh;
 }
 .details h1:nth-child(1){
   font-size: 1.3vw;
