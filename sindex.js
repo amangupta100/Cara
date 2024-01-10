@@ -1,7 +1,7 @@
 let nav_Cont = document.querySelector(".nav-cont")
 let hmb = document.querySelector('.nav .part3 .hmb')
 let cl = document.querySelector(".nav-cont .close")
-
+let logo = document.querySelector(".logo");
 hmb.addEventListener("click",()=>{
     nav_Cont.style.visibility = "visible"
     console.log("dm")
@@ -19,7 +19,6 @@ function cursor(){
     let cursor = document.querySelector(".cursor")
 let cont = document.querySelector(".wrapper")
 let prod = document.querySelectorAll(".div")
-let s_page = document.querySelectorAll(".s_page1 .items .div")
 
 cont.addEventListener("mousemove",(dets)=>{
 gsap.to(cursor,{
@@ -41,5 +40,15 @@ item.addEventListener("mouseleave",()=>{
     cursor.style.backgroundColor = "grey"  
 })
 })
+logo.addEventListener("mousemove", () => {
+    cursor.style.width = "80px";
+    cursor.style.height = "80px";
+    cursor.style.backgroundColor = "grey";
+  });
+  logo.addEventListener("mouseleave", () => {
+    cursor.style.width = "25px";
+    cursor.style.height = "25px";
+    cursor.style.backgroundColor = "grey";
+  });
 }
 cursor()
