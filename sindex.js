@@ -52,3 +52,24 @@ logo.addEventListener("mousemove", () => {
   });
 }
 cursor()
+
+function img_Trans() {
+    let main_Img = document.querySelector("#main");
+    let sm_img = document.getElementsByClassName("sm_img");
+  
+    sm_img[0].onclick = function () {
+      main_Img.src = sm_img[0].src;
+    };
+    sm_img[1].onclick = function () {
+      main_Img.src = sm_img[1].src;
+    };
+  
+    sm_img[2].onclick = function () {
+      main_Img.src = sm_img[2].src;
+    };
+  
+    sm_img[3].onclick = function () {
+      main_Img.src = sm_img[3].src;
+    };
+  }
+  img_Trans();

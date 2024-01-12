@@ -51,30 +51,11 @@ cl.addEventListener("click", () => {
   nav_Cont.style.visibility = "hidden";
 });
 
-function img_Trans() {
-  let main_Img = document.querySelector("#main");
-  let sm_img = document.getElementsByClassName("sm_img");
-
-  sm_img[0].onclick = function () {
-    main_Img.src = sm_img[0].src;
-    console.log("all")
-  };
-  sm_img[1].onclick = function () {
-    main_Img.src = sm_img[1].src;
-  };
-
-  sm_img[2].onclick = function () {
-    main_Img.src = sm_img[2].src;
-  };
-
-  sm_img[3].onclick = function () {
-    main_Img.src = sm_img[3].src;
-  };
-}
-img_Trans();
-
 function text_Trans(){
-let elem = document.getElementsByClassName("f-prh1")
-console.log(elem)
+let elem = document.querySelector(".f-prh1")
+let div = document.querySelector(".features")
+gsap.to(elem,{
+  x:-window.innerWidth,duration:3,repeat:100,
+})
 }
 text_Trans()
