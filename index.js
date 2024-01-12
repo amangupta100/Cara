@@ -53,10 +53,11 @@ cl.addEventListener("click", () => {
 
 function img_Trans() {
   let main_Img = document.querySelector("#main");
-  let sm_img = document.getElementsByClassName(" sm_img");
+  let sm_img = document.getElementsByClassName("sm_img");
 
   sm_img[0].onclick = function () {
     main_Img.src = sm_img[0].src;
+    console.log("all")
   };
   sm_img[1].onclick = function () {
     main_Img.src = sm_img[1].src;
@@ -71,3 +72,9 @@ function img_Trans() {
   };
 }
 img_Trans();
+
+function text_Trans(){
+let elem = document.getElementsByClassName("f-prh1")
+console.log(elem)
+}
+text_Trans()
