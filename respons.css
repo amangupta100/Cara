@@ -31,22 +31,40 @@
   .nav img {
     width: 13vw;
   }
-  .page1 .text-cont h1:nth-child(2) {
+  .swiper-slide:nth-child(1) h1:nth-child(2) {
     font-size: 3vw;
-    letter-spacing: 1px;
   }
-  .page1 .text-cont h1:nth-child(1) {
+  .swiper-slide:nth-child(1) h1:nth-child(4) {
+    font-size: 3vw;
+  }
+  .swiper-slide:nth-child(1) a{
+    width: 13vw;font-size: 1.8vw;
+    padding: 1vw;
+  }
+  .swiper-slide:nth-child(2) h1:nth-child(1) {
+    font-size: 6.5vw;
+  }
+  .swiper-slide:nth-child(2) h1:nth-child(2) {
     font-size: 2.5vw;
   }
-  .text-cont h1:nth-child(4) {
+  .swiper-slide button {
+    font-size: 1.7vw;
+  }
+  .swiper-slide:nth-child(3) h1:nth-child(1) {
+    font-size: 6.5vw;
+  }
+  .swiper-slide:nth-child(3) h1:nth-child(2) {
+    font-size: 2vw;
+  }
+  .swiper-slide:nth-child(4) h1:nth-child(1) {
+    font-size: 6.5vw;
+  }
+  .swiper-slide:nth-child(4) h1:nth-child(2) {
     font-size: 2.5vw;
   }
-  .text-cont a {
-    font-size: 2.5vw;
-    padding: 1vw 2vw;
-    width: 18vw;
-    margin-top: 20px;
-  }
+.swiper-slide:nth-child(4) button{
+  color:gray;
+}
   .page2 .features {
     grid-template-columns: auto auto auto;
     padding: 8vw 8vw;
@@ -189,6 +207,9 @@
     width: 55%;
     font-size: 2.3vw;
   }
+  .page4 .footer #div4 .download img{
+    width: 17vw;
+  }
   .page4 .footer .designed-cont h1:nth-child(2) {
     display: none;
   }
@@ -246,17 +267,17 @@
     font-size: 2vw;
   }
   .s_page2 .footer {
-    gap: 30px;
-    justify-content: center;
-    padding: 8vw 0;
-    align-items: center;
+    gap: 30px;padding: 9vw 3vw;
     grid-template-columns: auto auto;
   }
   .s_page2 .footer #div1 .media_cont img {
     width: 4vw;
   }
   .s_page2 .footer .cont {
-    height: 51vh;
+    height: 53vh;
+  }
+  .s_page2 .footer #div4 .download img{
+    width: 15vw;
   }
   .s_page2 .footer a {
     font-size: 2.7vw;
@@ -302,10 +323,85 @@
  .s_page1 .details .size a{
   font-size: 2vw;
  }
+ .a_page1 .cont .text-cont p{
+  font-size: 2vw;
+ }
+ .a_page1 .cont .text-cont{
+  width: 70%;
+}
+.a_page1 .cont img{
+  width: 50%;
+  height:50vh;
+}
+.a_page1 .cont{
+  padding: 0 4vw;
+  justify-content: space-around;
+}
+.a_page3 .features{
+  min-height:80vh;
+  grid-template-columns: auto auto auto;
+}
+.a_page3 .footer{
+ min-height: 110vh;
+  padding: 7vw 0;
+  grid-template-columns: auto auto;
+}
+.a_page3 .footer #div4 .download img{
+  width: 14vw;
+}
+.a_page3 .footer .designed-cont h1:nth-child(2){
+  display: none;
+}
+.a_page3 .styl1{
+  font-size: 2.6vw;
+}
+.a_page3 .styl2{
+  font-size: 2vw;
+}
 }
 @media screen and (max-width: 426px) {
   .nav-cont {
     margin: 3vw 1vw;
+  }
+  .page1 .swiper-slide:nth-child(1) h1:nth-child(1){
+    font-size: 6vw;
+  }
+  .page1 .swiper-slide:nth-child(1) h1:nth-child(2){
+    font-size: 4vw;
+  }
+  .page1 .swiper-slide:nth-child(1) h1:nth-child(3){
+    font-size: 5vw;width: 100%;
+  }
+  .page1 .swiper-slide:nth-child(1) h1:nth-child(4){
+    font-size: 4vw;
+  }
+  .page1 .swiper-slide:nth-child(1) a{
+    font-size: 3.5vw;width: 25vw;padding: 1.5vw;
+  }
+  .page1 .swiper-slide:nth-child(2) h1:nth-child(2){
+    font-size: 4vw;
+  }
+  .page1 .swiper-slide:nth-child(2) h1:nth-child(1){
+    font-size: 7vw;
+  }
+  .page1 .swiper-slide:nth-child(2) h1:nth-child(2){
+    font-size: 4vw;
+  }
+  .page1 .swiper-slide button{
+    font-size: 3vw;
+    padding: 2vw;
+  }
+  .page1 .swiper-slide:nth-child(3) h1:nth-child(1){
+    font-size: 7vw;
+  }
+  .page1 .swiper-slide:nth-child(3) h1:nth-child(2){
+    font-size: 4vw;
+  }
+  .page1 .swiper-slide:nth-child(4) h1:nth-child(1){
+    font-size: 7vw;
+  }
+  .page1 .swiper-slide:nth-child(4) h1:nth-child(2){
+    font-size: 4vw;
   }
   .page1 .nav {
     height: 8vh;
@@ -317,6 +413,7 @@
     width: 4vw;
     height: 1.4px;
   }
+
   .hmb .line:nth-child(1) {
     width: 3vw;
     color: black;
@@ -335,25 +432,10 @@
     width: 20vw;
   }
   .page2 .features .f h1 {
-    font-size: 2.8vw;
+    font-size: 3.6vw;
   }
   .nav .part3 img {
     width: 5vw;
-  }
-  .page1 .text-cont h1:nth-child(1) {
-    font-size: 4.6vw;
-  }
-  .page1 .text-cont{
-    height: 70vh;
-  }
-  .page1 .text-cont h1:nth-child(2) {
-    font-size: 4.6vw;
-  }
-  .page1 .text-cont h1:nth-child(3) {
-    font-size: 5vw;width: 70%;color: white;
-  }
-  .text-cont h1:nth-child(4) {
-    font-size: 3.4vw;
   }
   .page2 .features {
     grid-template-columns: auto auto;
@@ -366,14 +448,17 @@
     position: relative;
   }
   .f-products p {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
   .f-products .f-prh1{
-    font-size: 8vw;
+    font-size: 9vw;
+  }
+  .f-products .f-prh1::first-letter{
+    font-size: 14vw;
   }
   .items .div {
     width: 56vw;
-    height: 79vw;
+    height: 85vw;
   }
   .div .product {
     font-size: 4.6vw;
@@ -391,8 +476,14 @@
   .page2 .banner_page2 h1:nth-child(2) {
     font-size: 4vw;
   }
+  .page3 .new-arr .arrival{
+    font-size: 9vw;
+  }
+  .page3 .new-arr .arrival::first-letter{
+    font-size: 14vw;
+  }
   .page3 .new-arr p {
-    font-size: 3.6vw;
+    font-size: 4.5vw;
   }
   .page3 .items {
     grid-template-columns: auto;
@@ -420,8 +511,8 @@
     padding: 2vw;
     font-size: 2.5vw;
   }
-  .footer .styl1 {
-    font-size: 3vw;
+ .page4 .footer .styl1 {
+    font-size: 3.6vw;
     letter-spacing: 1px;
   }
   .page4 .footer .cont {
@@ -433,11 +524,11 @@
  .page4 .footer .cont{
 height: 45vh;
   }
-  .footer #div4 .download img{
-    width: 28vw;
+ .page4 .footer #div4 .download img{
+    width: 27vw;
   }
-  .footer .styl2 {
-    font-size: 3vw;
+ .page4 .footer .styl2 {
+    font-size:3vw;
     letter-spacing: 0px;
   }
   .s_page1 .items {
@@ -523,6 +614,45 @@ padding-left:  2vw;justify-content: center;
 }
 .s_page2 .footer .styl2{
   font-size: 3vw;
+}
+.a_page1 .cont{
+  flex-direction: column;
+  height: 89vh;
+  padding: 8vw 0;
+}
+.a_page1 .cont img{
+  width: 60%;height: 50vh;
+}
+.a_page1 .cont .text-cont p{
+  font-size: 3.2vw;
+}
+.a_page1 .cont .text-cont{
+  width: 100%;
+}
+.a_page2{
+  min-height: 70vh;
+}
+.a_page2 h1{
+  font-size: 6vw;
+}
+.a_page2 video{
+  width: 85%;height: 100%;
+}
+.a_page3 .features{
+  grid-template-columns: auto auto;
+  padding: 0vw 7vw;
+}
+.a_page3 .features .f h1{
+  font-size: 3.4vw;
+}
+.a_page3 .footer{
+  padding:3vw 6vw;
+}
+.a_page3 .footer #div4 .download img{
+  width:23vw;
+}
+.a_page3 .cont{
+  height: 37vh;
 }
 }
 @media screen and (max-width: 376px) {

@@ -3,6 +3,7 @@ function cursor() {
   let cont = document.querySelector(".wrapper");
   let prod = document.querySelectorAll(".div");
   let logo = document.querySelector(".logo");
+  let products=document.querySelector(".prod")
 
   cont.addEventListener("mousemove", (dets) => {
     gsap.to(cursor, {
@@ -36,6 +37,18 @@ function cursor() {
     cursor.style.height = "25px";
     cursor.style.backgroundColor = "grey";
   });
+  // products.addEventListener("mousemove", () => {
+  //   cursor.style.width = "80px";
+  //   cursor.style.height = "80px";
+  //   cursor.style.backgroundColor = "grey";
+  //   cursor.innerHTML = "Products"
+  // });
+  // products.addEventListener("mouseleave", () => {
+  //   cursor.style.width = "25px";
+  //   cursor.style.height = "25px";
+  //   cursor.style.backgroundColor = "grey";
+  //   cursor.innerHTML = ""
+  // });
 }
 cursor();
 
@@ -51,11 +64,20 @@ cl.addEventListener("click", () => {
   nav_Cont.style.visibility = "hidden";
 });
 
-function text_Trans(){
-let elem = document.querySelector(".f-prh1")
-let div = document.querySelector(".features")
-gsap.to(elem,{
-  x:-window.innerWidth,duration:3,repeat:100,
+function Swwiper(){
+var swiper = new Swiper(".mySwiper",{
+  cssMode:true,
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev"
+  },
+  pagination:{
+   el:".swiper-pagination",
+   clickable:true,
+   dynamicBullets:true
+  },
+
+ 
 })
 }
-text_Trans()
+Swwiper()
