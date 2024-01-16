@@ -661,7 +661,7 @@ input:focus {
 }
 .page4 .footer {
   width: 100%;
-  min-height: 48vh;
+  min-height:50vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 7vw 5vw;

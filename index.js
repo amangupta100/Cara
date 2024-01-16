@@ -1,28 +1,27 @@
-
 function cursor() {
   let cursor = document.querySelector(".cursor");
   let cont = document.querySelector(".wrapper");
   let prod = document.querySelectorAll(".div");
   let logo = document.querySelector(".logo");
-  let products=document.querySelector(".prod")
-  let btn = document.querySelectorAll(".swiper-slide button")
+  let products = document.querySelector(".prod");
+  let btn = document.querySelectorAll(".swiper-slide button");
   cont.addEventListener("mousemove", (dets) => {
     gsap.to(cursor, {
-      left: dets.x+10,
-      top: dets.y+10,
+      left: dets.x + 10,
+      top: dets.y + 10,
     });
   });
   btn.forEach((item) => {
-    let vle = item.innerHTML
+    let vle = item.innerHTML;
     item.addEventListener("mouseenter", () => {
       cursor.style.width = "130px";
       cursor.style.height = "130px";
-      cursor.innerHTML = `${vle}`
+      cursor.innerHTML = `${vle}`;
     });
     item.addEventListener("mouseleave", () => {
       cursor.style.width = "25px";
       cursor.style.height = "25px";
-      cursor.innerHTML = ""
+      cursor.innerHTML = "";
     });
   });
   prod.forEach((item) => {
@@ -50,12 +49,12 @@ function cursor() {
   products.addEventListener("mousemove", () => {
     cursor.style.width = "85px";
     cursor.style.height = "85px";
-    cursor.innerHTML = "Products"
+    cursor.innerHTML = "Products";
   });
   products.addEventListener("mouseleave", () => {
     cursor.style.width = "25px";
     cursor.style.height = "25px";
-    cursor.innerHTML = ""
+    cursor.innerHTML = "";
   });
 }
 cursor();
@@ -72,29 +71,25 @@ cl.addEventListener("click", () => {
   nav_Cont.style.visibility = "hidden";
 });
 
-function Swwiper(){
-var swiper = new Swiper(".mySwiper",{
-  cssMode:true,
-  navigation:{
-    nextEl:".swiper-button-next",
-    prevEl:".swiper-button-prev"
-  },
-  pagination:{
-   el:".swiper-pagination",
-   clickable:true,
-   dynamicBullets:true
-  },
-
- 
-})
+function Swwiper() {
+  var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+  });
 }
-Swwiper()
+Swwiper();
 
-function myfunction(){
-  window.open("sproduct.html")
+function myfunction() {
+  window.open("sproduct.html");
 }
-myfunction()
-
-
+myfunction();
 
 
