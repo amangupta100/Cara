@@ -363,6 +363,9 @@
   .nav-cont {
     margin: 3vw 1vw;
   }
+  .nav-cont a{
+    font-size: 4vw;
+  }
   .page1 .swiper-slide:nth-child(1) h1:nth-child(1){
     font-size: 6vw;
   }
@@ -575,13 +578,16 @@ height: 45vh;
 .s_page1 .cont{
   flex-direction: column;
   padding: 0 4vw;gap: 15px;
- margin-top:24vw;align-items: center;
+ margin-top:24vw;align-items: center
 }
 .s_page1 .cont .img_cont{
-  width: 100%;height: 75vh;
+  width: 100%;height: 72vh;
 }
 .s_page1 .cont .details{
   width: 100%;
+}
+.s_page1 .cont .img_cont #main{
+  height: 55vh;
 }
 .s_page1 .cont .details h1:nth-child(1){
   font-size: 4vw;
