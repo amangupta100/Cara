@@ -65,7 +65,6 @@ let cl = document.querySelector(".nav-cont .close");
 
 hmb.addEventListener("click", () => {
   nav_Cont.style.visibility = "visible";
-  console.log("smm");
 });
 cl.addEventListener("click", () => {
   nav_Cont.style.visibility = "hidden";

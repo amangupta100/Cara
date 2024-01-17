@@ -358,6 +358,43 @@
 .a_page3 .styl2{
   font-size: 2vw;
 }
+.b_page1 .ban{
+  margin-top: 12vw;
+}
+.b_page1 .ban h1:nth-child(1){
+  font-size: 6vw;
+}
+.c_page1 .nav{
+  height: 9vh;
+}
+.c_page1 .ban{
+  margin-top: 7vw;
+}
+.c_page1 .map_text .addr-cont h1{
+  font-size: 1.8vw;color: red;
+}
+.c_page2 .fill_form .input input{
+  font-size: 1.8vw;
+}
+.c_page2 .form .people .people-cont{
+height: 30vh;
+
+}
+.form .people{
+  width: 44%;
+}
+.c_page2 .people-cont h1{
+  font-size: 2vw;
+}
+.c_page2 .fill_form textarea{
+  font-size: 1.8vw;
+}
+.c_page2 .fill_form button{
+  font-size: 1.9vw;
+}
+.c_page2 .fill_form h1:nth-child(1){
+  font-size: 2.4vw;
+}
 }
 @media screen and (max-width: 426px) {
   .nav-cont {
@@ -365,6 +402,9 @@
   }
   .nav-cont a{
     font-size: 4vw;
+  }
+  .page2 .header{
+    animation-duration: 8s;
   }
   .page1 .swiper-slide:nth-child(1) h1:nth-child(1){
     font-size: 6vw;
@@ -623,17 +663,32 @@ padding-left:  2vw;justify-content: center;
 }
 .a_page1 .cont{
   flex-direction: column;
-  height: 89vh;
+ min-height:125vh;
   padding: 8vw 0;
+}
+.a_page1 .ban h1:nth-child(1){
+  font-size: 6vw;
+}
+.a_page1 .ban{
+  margin-top: 12vw;
+}
+.a_page1 .ban h1:nth-child(2){
+  font-size: 4vw;
 }
 .a_page1 .cont img{
   width: 60%;height: 50vh;
 }
-.a_page1 .cont .text-cont p{
-  font-size: 3.2vw;
+.a_page1 .nav{
+  height: 8vh;
+}
+.a_page1 .cont .text-cont h1{
+  font-size: 4vw;
 }
 .a_page1 .cont .text-cont{
   width: 100%;
+}
+.a_page1 .cont .text-cont p{
+  font-size: 4vw;
 }
 .a_page2{
   min-height: 70vh;
@@ -658,7 +713,121 @@ padding-left:  2vw;justify-content: center;
   width:23vw;
 }
 .a_page3 .cont{
-  height: 37vh;
+  height: 45vh;
+}
+.a_page3 .footer .styl1{
+  font-size: 4vw;
+}
+.a_page3 .footer .styl2{
+  font-size: 3.2vw;
+}
+.a_page3 .footer #div4 .payment img{
+  width: 34vw;
+}
+.a_page3 .footer .designed-cont h1{
+  font-size: 4vw;
+}
+.b_page1 .ban h1:nth-child(2){
+  font-size: 4vw;
+}
+.b_page1 .nav{
+  height: 8vh;
+}
+.b_page1 .blog .blog-cont img{
+  width: 85%;height: 32vh;
+}
+.b_page1 .blog .blog-cont{
+  width:100%;height:70vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.b_page1 .blog .blog-cont .img-blog_cont h1{
+font-size: 8vw;letter-spacing: 1px;
+}
+.b_page1 .blog .blog-cont .img-blog_cont{
+  width: 70%;
+}
+.b_page1 .blog .text-blog_cont h1{
+font-size:4.3vw;
+}
+.b_page1 .blog .text-blog_cont p{
+  font-size: 3.5vw;
+}
+.b_page1 .blog .text-blog_cont button{
+  font-size: 3.5vw;width: 65%;
+}
+.c_page1 .nav{
+  height: 8vh;
+}
+.c_page1 .ban{
+  margin-top: 9vh;
+}
+.c_page1 .ban h1:nth-child(1){
+  font-size: 6vw;
+}
+.c_page1 .ban h1:nth-child(2){
+  font-size: 4vw;
+}
+.c_page1 .map_text{
+  min-height: 80vh;
+  flex-direction: column
+}
+.c_page1 .map_text .addr{
+  gap: 20px;
+}
+.c_page1 .map_text .text{
+  width: 100%;min-height: 59vh;
+  padding: 4vw 5vw;
+}
+.c_page1 .map_text .text h1:nth-child(1){
+  font-size: 4vw;
+}
+.c_page1 .map_text .text h1:nth-child(2){
+  font-size: 5.5vw;
+}
+.c_page1 .map_text .text .addr h1{
+  font-size: 3.7vw;
+}
+.c_page1 .map_text .text .addr-cont .amaa{
+  font-size: 4vw;
+}
+.c_page2 .form{
+  flex-direction: column;
+  min-height: 120vh;
+}
+.c_page2 .form .fill_form{
+  width: 100%;height: 110vh;
+}
+.c_page2 .form .fill_form .input button{
+font-size: 3.7vw;
+}
+.c_page2 .fill_form h1:nth-child(1){
+  font-size: 4vw;
+}
+.c_page2 .fill_form .input input{
+  padding: 4vw;font-size: 3.5vw;
+}
+.c_page2 .fill_form .input textarea{
+  padding: 4vw;font-size: 3.5vw;
+}
+.c_page2 .form .people{
+  padding: 0 3vw;
+  width: 95%;
+}
+.c_page2 .form .people-cont{
+  height: 40vh;
+}
+.people-cont img{
+  width: 19vw;height: 19vw;
+}
+.people-cont .text-people h1{
+  font-size: 3.5vw;color: grey;
+  font-weight: 300;
+}
+.people-cont .text-people h1:nth-child(1){
+  font-size: 4vw;color:black;
+  font-weight: 400;
 }
 }
 @media screen and (max-width: 376px) {
