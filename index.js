@@ -92,3 +92,13 @@ function myfunction() {
 myfunction();
 
 
+function myMedia(){
+  let media_link = "https://www.linkedin.com/in/aman-gupta-721953250/"
+let el = document .querySelectorAll(".media")
+el.forEach((item)=>{
+item.addEventListener("click",()=>{
+  window.open(`${media_link}`)
+})
+})
+}
+myMedia()
