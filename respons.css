@@ -578,6 +578,12 @@ height: 45vh;
     grid-template-columns: auto;
     padding: 15vw 0;
   }
+  .s_page1 .nav{
+    height: 8vh;
+  }
+  .s_page1 .ban{
+    margin-top: 13vw;
+  }
   .s_page1 .items .div {
     width: 55vw;
     height: 87vw;

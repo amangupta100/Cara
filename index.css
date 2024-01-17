@@ -45,9 +45,6 @@
   color: white;
   width: 50%;
 }
-.swiper-slide:nth-child(1) button{
-  border: 7px double white;
-}
 .swiper-slide:nth-child(2) {
   background-image: url(./assests/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg);
   background-size: cover;
@@ -102,17 +99,26 @@
 }
 .swiper-slide button {
   text-transform: uppercase;
-  border: 1px solid white;
   background-color: transparent;
-  font-size: 1.1vw;
+  font-size: 1.3vw;
   padding: 1.4vw;
+  border: 3px solid white;
   color: white;
   margin-top: 2vw;
   cursor: pointer;
   transition: all ease-in-out 1s;
+  text-shadow: 10px 10px 20px #ff99cc,
+  -10px 10px 30px #ff99cc;
+  overflow: hidden;
 }
-.swiper-slide button:hover {
-  background-color: red;
+.swiper-slide button:hover{
+  background: #03e9f4;
+  color: white;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 .swiper-button-next {
   width: 200px;
